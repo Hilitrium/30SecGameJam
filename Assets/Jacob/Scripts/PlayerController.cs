@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour {
     Vector3 moveDirection;
     Vector3 jump;
 
-    bool isGrounded;
+    public bool isGrounded;
 
     void Start()
     {
@@ -32,6 +32,13 @@ public class PlayerController : MonoBehaviour {
     void OnCollisionStay()
     {
         isGrounded = true;
+        Debug.Log("colliding");
+    }
+
+    void OnCollisionExit()
+    {
+        isGrounded = false;
+        Debug.Log("in air");
     }
 
     void Update()
