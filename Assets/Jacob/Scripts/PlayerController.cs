@@ -32,13 +32,13 @@ public class PlayerController : MonoBehaviour {
     void OnCollisionStay()
     {
         isGrounded = true;
-        Debug.Log("colliding");
+       // Debug.Log("colliding");
     }
 
     void OnCollisionExit()
     {
         isGrounded = false;
-        Debug.Log("in air");
+       // Debug.Log("in air");
     }
 
     void Update()

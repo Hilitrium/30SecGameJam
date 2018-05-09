@@ -11,7 +11,7 @@ public class ChildPlatform : MonoBehaviour {
         if (c.gameObject.tag == "Player")
         {
             player = c.gameObject;
-            Debug.Log("collision");
+           // Debug.Log("collision");
 
             player.transform.parent = transform.parent;
         }
