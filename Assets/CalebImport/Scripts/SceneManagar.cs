@@ -7,7 +7,7 @@ public class SceneManagar : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene("scene");
+        SceneManager.LoadScene("JLevel1");
     }
 
     public void QuitGame()
@@ -19,5 +19,10 @@ public class SceneManagar : MonoBehaviour
     public void ToMenu()
     {
         SceneManager.LoadScene("Menu");
+    }
+
+    public void NextMap()
+    {
+       SceneManager.LoadScene("CScene1");
     }
 }
